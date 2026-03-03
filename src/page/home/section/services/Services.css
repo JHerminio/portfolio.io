@@ -1,0 +1,165 @@
+/* services section styling */
+.services {
+    color: #fff;
+    background: #111;
+    height: 40rem;
+}
+
+.services .title::after {
+    /* content: "what i provide"; */
+    background: transparent;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    color: #00bfff;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+    color: #00bfff;
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: #00bfff;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: crimson;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    .services {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        padding: 40px 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        padding: 35px 15px;
+        margin-bottom: 15px;
+    }
+
+    .services .serv-content .card .text {
+        font-size: 22px;
+    }
+
+    .services .serv-content .card i {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+
+    .services .serv-content .card .text {
+        font-size: 20px;
+        margin: 8px 0 5px 0;
+    }
+
+    .services .serv-content .card i {
+        font-size: 40px;
+    }
+
+    .services .serv-content .card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 500px) {
+    .services {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+        padding: 25px 15px;
+        margin-bottom: 15px;
+    }
+
+    .services .serv-content .card .text {
+        font-size: 18px;
+        margin: 8px 0 5px 0;
+    }
+
+    .services .serv-content .card i {
+        font-size: 35px;
+    }
+
+    .services .serv-content .card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .services {
+        height: auto;
+        padding: 12px 0;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+        padding: 20px 12px;
+        margin-bottom: 12px;
+    }
+
+    .services .serv-content .card .text {
+        font-size: 16px;
+        margin: 6px 0 4px 0;
+    }
+
+    .services .serv-content .card i {
+        font-size: 30px;
+    }
+
+    .services .serv-content .card p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
